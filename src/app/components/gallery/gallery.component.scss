@@ -1,0 +1,18 @@
+.gallery-text {
+    margin: 0 5px !important;
+}
+
+.gallery-small-image {
+    width: 25% !important;
+    height: 25% !important;
+}
+
+mat-grid-tile {
+    transition: 0.3s;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+mat-grid-tile:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}

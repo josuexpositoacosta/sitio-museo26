@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* @font-face {
+    font-family: Kessel105text-Book;
+    src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.otf) format("opentype");
+} */
+
+
+/*fuente a emplear en la web kessel 105 text book*/
+
+
+/*@font-face {
+    font-family: "Kessel105text-Book";
+    src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.ttf );
+    src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.eot);
+    /* IE9*/
+
+
+/*src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.eot) format("embedded-opentype");
+    /* IE6-IE8 */
+
+
+/*src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.woff) format("woff");
+    /* chrome、firefox */
+
+
+/*src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.ttf) format("truetype");
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+
+/*src: url(src/assets/fuente/KESSEL105/Kessel105Text-Book.svg) format("svg");
+    /* iOS 4.1- */
+
+
+/*
+}
+
+.fuente {
+    font-family: "Kessel105text-Book" !important;
+    /* font-size:12px;*/
+
+
+/*   font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Kessel105text-Book";
+} 
+
+*/
+
+
+/* @font-face {
+    font-family: 'Kessel105Text-Book';
+    src: url('src/assets/fuente/KESSEL105/Kessel105Text-Book.ttf');
+} */
+
+
+/* http://www.talbottype.co.uk */
+
+@font-face {
+    font-family: 'Kessel105Text-Book';
+    src: url('./assets/fuente/KESSEL105/Kessel105Text-Book.ttf') format('truetype');
+    /*src: url('https://ruta-de-la-fuente/Kessel105Text-Book.ttf') format('truetype');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Kessel105Text-Book';
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kessel105text-Book';
+    font-family: 'lato', 'arial', sans-serif;
+  } */
+
+
+/*del modal*/
+
+.w70 {
+    width: 70px;
+}
+
+.w5000 {
+    width: 5000000px;
+}
+
+.img-50 {
+    width: 50px;
+}
+
+.oculto {
+    display: none;
+}
+
+.fondo-negro {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+div.t1 {
+    zoom: 0.5;
+}
+
+div.t2 {
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+
+/*logo*/
+
+
+/* Establecer la altura del encabezado para que contenga el logotipo */
+
+
+/* header {
+    height: 120px;
+    transition: height 0.5s ease-in-out;
+} */
+
+
+/* Establecer el tamaño y la posición del logotipo */
+
+
+/* #logo {
+    width: 155px;
+    height: 62px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.5s ease-in-out;
+} */
+
+#logo2 {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 90px; */
+    /* width: 170px; */
+    height: 77px;
+    object-fit: initial;
+}
+
+#logo2 {
+    display: none;
+}
+
+
+/*estilo maqueta*/
+
+path:hover {
+    fill: #dedede;
+}
+
+path title {
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+
+.mapadiv .class1 {
+    font-size: 30px;
+}
+
+
+/*estilo de la etiqueta para salas*/
+
+
+/* estilo maqueta hover */
+
+[data-title] {
+    position: relative;
+}
+
+[data-map-hover]:after {
+    content: attr(data-map-hover);
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* padding: 3px 5px 7px; */
+    padding: 20px;
+    white-space: nowrap;
+    z-index: 99999;
+    visibility: hidden;
+    position: absolute;
+    left: 0%;
+    bottom: 120%;
+    border-radius: 15px 15px 15px 0;
+    font-size: 0.875rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+[data-map-hover]:hover:after {
+    opacity: 1;
+    -webkit-transition: all 0.1s ease 0.3s;
+    transition: all 0.1s ease 0.3s;
+    visibility: visible;
+}
+
+
+/* .popup {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.popup img {
+    display: block;
+    margin: auto;
+} */
+
+
+/* .tooltip-contenido {
+    opacity: 0;
+}
+
+.tooltip-contenido::hover:after {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+} */
+
+
+/* Establecer la altura del encabezado para que contenga el logotipo */
+
+
+/* header {
+    height: 120px;
+    transition: height 0.5s ease-in-out;
+} */
+
+
+/* Establecer el tamaño y la posición del logotipo */
+
+
+/* #logo1,
+#logo2 {
+    width: 155px;
+    height: 62px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+} */
+
+
+/* Esconder la segunda imagen del logotipo */
+
+
+/* #logo2 {
+    opacity: 0;
+} */
+
+
+/* imagen zoom*/
+
+
+/* * {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+            overflow: hidden;
+        } */
+
+
+/*
+#contactSeccion {
+    transition: transform .2s;
+}
+
+#contactSeccion:hover {
+    transform: scale(1.3);
+}
+
+.contactSection {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#zoom {
+    width: 100%;
+    height: 100%;
+    transform-origin: 0px 0px;
+    transform: scale(1) translate(0px, 0px);
+    cursor: grab;
+}
+*/
+
+
+/* div#zoom section>img {
+            width: 100%;
+            height: auto;
+        } */
+
+
+/* imagen zoom*/
+
+
+/*.resaltar{background-color:#FF0;}*/

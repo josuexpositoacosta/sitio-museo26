@@ -1,0 +1,634 @@
+<!-- botones flotantes para redes sociales -->
+
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+ 
+</label>
+    </div>
+</div>
+
+
+<!-- style="
+    background-image:url(assets/img/moncada/banner/eventos.jpg);
+    background-size: cover;
+    background-position: center;
+     background-image: url(' paginis[233].img | imag ');
+     background-size: cover;
+    "
+height: 400px; width: 1000px;
+-->
+<!-- cabecera pagina -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="
+    background-image:url(assets/img/moncada/banner/eventos.jpg);
+    background-size: cover;
+    background-position: center;
+    ">
+    <!-- <img [src]=" paginis[235]?.img | imag " class="img-fluid rounded-0" alt="Portfolio Project Image" style=" 
+    height: 400px; width: 1000px"-->
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+        </div>
+    </div>
+</section>
+<!-- eventos recientes -->
+<!-- intro de historia-->
+
+<section class="section section-no-border pt-0 pb-5 m-0 callout-dark heading-title heading-arrow-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h3 class="mb-0">Noticias</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- eventos recientes -->
+
+<section class="callout-blanco heading-title heading-arrow3-bottom about-section">
+
+    <div class="home-intro3 margen-superior">
+        <div class="container">
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-12 text-left">
+                    <div>
+                        <h5>Principales noticias del museo</h5>
+                    </div>
+                    <p>Conozca más sobre las noticias ......... </p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row px-3">
+                <div class="col-sm-4">
+                    <article class="post post-medium border-0 pb-0 mb-5">
+                        <div class="post-image">
+                            <!-- <a href="#"> -->
+                            <a (click)="irnoti(paginis[16])">
+                                <!-- <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                <img [src]=" paginis[16]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+
+                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                <!-- <a href="#"> -->
+                                <a (click)="irnoti(paginis[16])">
+                                    <!-- Título de la noticia -->
+                                    {{paginis[16]?.nombreeventopro}}
+                                </a>
+                            </h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                <span class="date">
+                                    <!-- 14 de enero de 2023 - 1:38 pm -->
+                                    {{ paginis[16]?.fecha | customDate }}
+                                </span>
+                            </div>
+                            <p>
+                                <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                {{paginis[16]?.informacion}}
+                            </p>
+
+                            <div class="post-meta">
+                                <span class="d-block mt-2"><a (click)="irnoti(paginis[16])" class="btn btn-museo">Leer</a></span>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <article class="post post-medium border-0 pb-0 mb-5">
+                        <div class="post-image">
+                            <!-- <a href="#"> -->
+                            <a (click)="irnoti(paginis[14])">
+                                <!-- <img src="assets/img/moncada/noticias/noticias/b.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                <img [src]=" paginis[14]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+
+                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                <!-- <a href="#"> -->
+                                <a (click)="irnoti(paginis[14])">
+                                    {{paginis[14]?.nombreeventopro}}
+                                    <!-- Título de la noticia -->
+                                </a>
+                            </h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                <span class="date">
+                                    <!-- 14 de enero de 2023 - 1:38 pm -->
+                                    {{ paginis[14]?.fecha | customDate }}
+                                </span>
+                            </div>
+
+                            <p>
+                                <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                {{paginis[14]?.informacion}}
+                            </p>
+
+                            <div class="post-meta">
+                                <span class="d-block mt-2"><a (click)="irnoti(paginis[14])" class="btn btn-museo">Leer</a></span>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <article class="post post-medium border-0 pb-0 mb-5">
+                        <div class="post-image">
+                            <!-- <a href="#"> -->
+                            <a (click)="irnoti(paginis[15])">
+                                <!-- <img src="assets/img/moncada/noticias/noticias/c.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                <img [src]=" paginis[15]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                            </a>
+                        </div>
+                        <div class="post-content">
+
+                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                <!-- <a href="#"> -->
+                                <a (click)="irnoti(paginis[15])">
+                                    <!-- Título de la noticia -->
+                                    {{paginis[15]?.nombreeventopro}}
+                                </a>
+                            </h2>
+                            <div class="post-meta">
+                                <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                <span class="date">
+                                    <!-- 14 de enero de 2023 - 1:38 pm -->
+                                    {{ paginis[15]?.fecha | customDate }}
+                                </span>
+                            </div>
+
+                            <p>
+                                <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                {{paginis[15]?.informacion}}
+                            </p>
+
+                            <div class="post-meta">
+                                <span class="d-block mt-2"><a (click)="irnoti(paginis[15])" class="btn btn-museo ">Leer</a></span>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row pb-1 pt-2">
+
+                <div class="col-md-12">
+
+                    <div class="col-sm-9  pb-3">
+                        <div class="text-left">
+                            <div class="mb-2">
+                                <h5>Otras noticias</h5>
+                            </div>
+                            <p class="mb-4">Le invitamos a conocer detalles de las noticias </p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="row pb-1">
+
+                        <div class="col-lg-4">
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.html"> -->
+                                        <a (click)="irnoti(paginis[238])">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[238]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[16])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[238]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[238]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.htmll"> -->
+                                        <a (click)="irnoti(paginis[239])">
+                                            <img [src]=" paginis[239]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/b.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[239])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[239]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[239]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.html"> -->
+                                        <a (click)="irnoti(paginis[240])">
+                                            <img [src]=" paginis[240]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/c.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[240])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[240]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[240]?.fecha | customDate }}
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.html"> -->
+                                        <a (click)="irnoti(paginis[241])">
+                                            <img [src]=" paginis[241]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[241])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[241]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[241]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+                        <div class="col-lg-4">
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.html"> -->
+                                        <a (click)="irnoti(paginis[242])">
+                                            <img [src]=" paginis[242]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[242])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[242]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[242]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-noticias-museo.htmll"> -->
+                                        <a (click)="irnoti(paginis[243])">
+                                            <img [src]=" paginis[243]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <img src="assets/img/moncada/noticias/noticias/b.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[243])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[243]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[243]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[244])">
+                                            <img [src]=" paginis[244]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.html">
+                                            <img src="assets/img/moncada/noticias/noticias/c.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[244])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[244]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[244]?.fecha | customDate }}   
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[245])">
+                                            <img [src]=" paginis[245]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.html">
+                                            <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[245])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[245]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[245]?.fecha | customDate }}   
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[246])">
+                                            <img [src]=" paginis[246]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.html">
+                                            <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[246])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[246]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[246]?.fecha | customDate }} 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[247])">
+                                            <img [src]=" paginis[247]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.htmll">
+                                            <img src="assets/img/moncada/noticias/noticias/b.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[247])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[247]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[247]?.fecha | customDate }} 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[248])">
+                                            <img [src]=" paginis[248]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.html">
+                                            <img src="assets/img/moncada/noticias/noticias/c.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[248])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[248]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[248]?.fecha | customDate }} 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <a (click)="irnoti(paginis[249])">
+                                            <img [src]=" paginis[249]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                            <!-- <a href="detalle-noticias-museo.html">
+                                            <img src="assets/img/moncada/noticias/noticias/a2.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-noticias-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="irnoti(paginis[249])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Título de la noticia -->
+                                                    {{paginis[249]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[249]?.fecha | customDate }} 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="page-item"><a [routerLink]="['../', 'noticias']" class="page-link"><i class="fas fa-angle-left"></i></a></li>
+                            <li class="page-item active"><a [routerLink]="['../', 'noticias1']" class="page-link">1</a></li>
+                            <li class="page-item"><a [routerLink]="['../', 'noticias2']" class="page-link">2</a></li>
+                            <li class="page-item"><a [routerLink]="['../', 'noticias3']" class="page-link">3</a></li>
+                            <li class="page-item"><a [routerLink]="['../', 'noticias4']" class="page-link"><i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</section>
+
+<!-- fin eventos recientes -->

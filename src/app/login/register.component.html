@@ -1,0 +1,58 @@
+<header id="header" class="header-transparent header-semi-transparent header-semi-transparent-dark header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+    <div class="header-body border-top-0 bg-dark box-shadow-none">
+        <div class="header-container container">
+            <div class="header-row">
+
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a (click)="refresh()" href="">
+                                <img alt="moncada" width="123 " height="48 " src="assets/img/moncada/logo/logo3ab.png ">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div *ngIf="isRegister; else noRegister">
+    Cuenta creada!!
+    <div>
+        <button routerLink="/login" type="submit" class="btn btn-primary mb-3">Autenticarce</button>
+    </div>
+</div>
+
+<ng-template #noRegister>
+    <div class="container">
+        <h3 class="mb-4">Registrarse</h3>
+        <form name="form" #f="ngForm" style="max-width: 250px;" (ngSubmit)="onRegister()" novalidate>
+
+            <a class="text-center db"><img src="../assets/img/moncada/logo/logo4.png" width="123" height="160" alt="moncada" /><br/></a>
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input class="form-control" name="nombre" type="text" [(ngModel)]="form.nombre" #nombre="ngModel" autocomplete="off" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" name="email" type="email" [(ngModel)]="form.email" #email="ngModel" email autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input class="form-control" type="password" name="password" [(ngModel)]="form.password" #password="ngModel" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary mb-3" [disabled]="!f.valid">Crear Cuenta</button>
+                <div *ngIf="f.submitted && isRegisterFail" class="alert alert-danger">Fallo al crear cuenta: {{ errorMsg }}</div>
+            </div>
+        </form>
+    </div>
+</ng-template>

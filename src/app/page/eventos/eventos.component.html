@@ -1,0 +1,1010 @@
+<!-- botones flotantes para redes sociales -->
+
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+
+</label>
+    </div>
+</div>
+
+<!-- cabecera pagina -->
+<!-- style="background-image:url(assets/img/moncada/banner/eventos.jpg); -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="
+     background-image: url(assets/img/moncada/banner/eventos.jpg);
+     background-size: cover;
+     background-position: center;
+   ">
+    <!-- <img [src]=" paginis[18]?.img | imag " class="img-fluid rounded-0" alt="Portfolio Project Image"
+    style="height: calc(100vh - 50px)"> -->
+
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+        </div>
+    </div>
+</section>
+
+
+<!-- eventos recientes -->
+<!-- intro de historia-->
+
+<section class="section section-no-border pt-0 pb-5 m-0 callout-dark heading-title heading-arrow-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h3 class="mb-0">Eventos del museo</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CALLOUT blanco ARROW BOTTOM -->
+<section class="callout-blanco heading-title heading-arrow3-bottom about-section">
+
+    <div class="home-intro3 margen-superior">
+
+        <div class="container">
+            <div class="row pb-1">
+                <div class="col-sm-12 mb-4">
+                    <div class="text-left">
+                        <div class="mb-2">
+                            <h5>Principales eventos desarrollados por nuestro museo</h5>
+                        </div>
+                        <p class="mb-4">Le invitamos a conocer los principales eventos que se desarrollan en ...........</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-5"></div>
+
+                <div class="row pb-1">
+
+                    <div class="col-lg-12 mb-4 pb-2">
+                        <!-- <a href="#">  -->
+                        <a (click)="ir(paginis[18])">
+                            <article class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                                <div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+                                    <!-- <img src="assets/img/moncada/noticias/eventos/eventop1.jpg" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds"> -->
+                                    <img [src]=" paginis[18]?.img | imag " class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+                                    <div class="thumb-info-title bg-transparent p-4">
+                                        <div class="thumb-info-inner mt-1">
+                                            <h2 class="font-weight-bold text-color-light line-height-2  mb-0">
+                                                {{paginis[18]?.nombreeventopro}}
+                                                <!-- Nombre del evento principal -->
+                                            </h2>
+                                        </div>
+                                        <div class="thumb-info-show-more-content">
+                                            <p class="mb-0 text-1 line-height-9 mb-1 mt-2 text-light opacity-5">
+                                                {{paginis[18]?.informacion}}
+                                                <!-- Breve descripción del evento Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="blog-posts">
+
+                        <div class="row px-3">
+
+                            <div class="col-sm-4">
+                                <article class="post post-medium border-0 pb-0 mb-5">
+                                    <div class="post-image">
+                                        <!-- <a href="#"> -->
+                                        <a (click)="ir(paginis[19])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/ev2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                            <img [src]=" paginis[19]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                        </a>
+                                    </div>
+
+                                    <div class="post-content">
+
+                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                            <a (click)="ir(paginis[19])">
+                                                <!-- Título del evento desarrollado -->
+                                                {{paginis[19]?.nombreeventopro}}
+                                            </a>
+                                        </h2>
+                                        <div class="post-meta">
+                                            <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                            <span class="date">
+                                                <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                {{ paginis[19]?.fecha | customDate }}
+                                            </span>
+                                        </div>
+
+                                        <p>
+                                            <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                            {{paginis[19]?.informacion}}
+                                        </p>
+
+                                        <div class="post-meta">
+                                            <span class="d-block mt-2"><a (click)="ir(paginis[19])" class="btn btn-museo">Leer</a></span>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <article class="post post-medium border-0 pb-0 mb-5">
+                                    <div class="post-image">
+                                        <!-- <a href="#"> -->
+                                        <a (click)="ir(paginis[20])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/ev1.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                            <img [src]=" paginis[20]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                        </a>
+                                    </div>
+
+                                    <div class="post-content">
+
+                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                            <a (click)="ir(paginis[20])">
+                                                <!-- Título del evento desarrollado -->
+                                                {{paginis[20]?.nombreeventopro}}
+                                            </a>
+                                        </h2>
+                                        <div class="post-meta">
+                                            <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                            <span class="date">
+                                                <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                {{ paginis[20]?.fecha | customDate }}
+                                            </span>
+                                        </div>
+
+                                        <p>
+                                            <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                            {{paginis[20]?.informacion}}
+                                        </p>
+
+                                        <div class="post-meta">
+                                            <span class="d-block mt-2"><a (click)="ir(paginis[20])" class="btn btn-museo">Leer</a></span>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <article class="post post-medium border-0 pb-0 mb-5">
+                                    <div class="post-image">
+                                        <!-- <a href="#"> -->
+                                        <a (click)="ir(paginis[21])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/ev3.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                            <img [src]=" paginis[21]?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="post-content">
+
+                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                            <a (click)="ir(paginis[21])">
+                                                <!-- Título del evento desarrollado -->
+                                                {{paginis[21]?.nombreeventopro}}
+                                            </a>
+                                        </h2>
+                                        <div class="post-meta">
+                                            <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                            <span class="date">
+                                                <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                {{ paginis[21]?.fecha | customDate }}
+                                            </span>
+                                        </div>
+
+                                        <p>
+                                            <!-- Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+                                            {{paginis[20]?.informacion}}
+                                        </p>
+
+                                        <div class="post-meta">
+                                            <span class="d-block mt-2"><a (click)="ir(paginis[21])" class="btn btn-museo ">Leer</a></span>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row pb-1 pt-2">
+
+                <div class="col-md-9">
+
+                    <div class="col-sm-9  pb-3">
+                        <div class="text-left">
+                            <div class="mb-2">
+                                <h5>Eventos desarrollados por nuestro museo</h5>
+                            </div>
+                            <p class="mb-4">Le invitamos a conocer detalles de los eventos que se desarrollan en ...........</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row pb-1">
+
+                        <div class="col-lg-6 mb-4 pb-1">
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[22])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[22]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[22])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[22]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[22]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[23])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[23]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[23])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[23]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[23]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[24])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[24]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary">                                                     -->
+                                                <a (click)="ir(paginis[24])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[24]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[24]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[25])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[25]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[25])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[25]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[25]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[26])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[26]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[26])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[26]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[26]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[27])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[27]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[27])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[27]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[27]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[28])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[28]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[28])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[28]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[28]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[29])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[29]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[29])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[29]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[29]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-6 ">
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[30])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[30]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[30])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[30]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[30]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[31])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[31]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[31])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[31]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[31]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[32])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[32]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[32])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[32]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[32]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-6 ">
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[33])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[33]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[33])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[33]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[33]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="thumb-info thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                <div class="row align-items-center pb-1">
+                                    <div class="col-sm-4">
+                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                        <a (click)="ir(paginis[34])">
+                                            <!-- <img src="assets/img/moncada/noticias/eventos/evento1a.jpg" class="img-fluid border-radius-0" alt="evento"> -->
+                                            <img [src]=" paginis[34]?.img | imag " class="img-fluid border-radius-0" alt="evento">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 ps-sm-0">
+                                        <div class="thumb-info-caption-text">
+                                            <h4 class="d-block pb-2 line-height-2 text-3  mb-0">
+                                                <!-- <a href="detalle-eventos-museo.html" class="text-decoration-none text-color-hover-primary"> -->
+                                                <a (click)="ir(paginis[34])" class="text-decoration-none text-color-hover-primary">
+                                                    <!-- Nombre de la actividad -->
+                                                    {{paginis[34]?.nombreeventopro}}
+                                                </a>
+                                            </h4>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[34]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <!-- <ul class="pagination">
+                            <li class="page-item"><a href="#" class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                            <li class="page-item active"><a href="#" class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                        </ul> -->
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+
+                    <div class="text-left">
+                        <div class="mb-2">
+                            <h5>Programación de eventos</h5>
+                        </div>
+                        <p class="mb-4">Actividades programadas por nuestra institución. </p>
+                    </div>
+
+                    <div class="pb-2">
+
+                        <div class="mb-4 pb-2">
+
+                            <ul class="simple-post-list">
+
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[35])">
+                                                            <!-- Proyección documental .... -->
+                                                            {{paginis[35]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[35]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[36])">
+                                                            <!-- Taller literario .... -->
+                                                            {{paginis[36]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[36]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[37])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[37]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[37]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[38])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[38]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[38]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[39])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[39]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[39]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[40])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[40]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[40]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[41])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[41]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[41]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[42])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[42]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[42]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[43])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[43]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[43]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[44])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[44]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[44]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[45])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[45]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[45]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li>
+                                    <article>
+                                        <div class="feature-box feature-box-style-2">
+                                            <div class="feature-box-icon">
+                                                <i class="icons icon-event text-color-primary"></i>
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-meta">
+                                                    <h4 class="font-weight-normal text-3 mb-0">
+                                                        <!-- <a href="detalle-eventos-museo.html"> -->
+                                                        <a (click)="ir(paginis[46])">
+                                                            <!-- Nombre del evento .... -->
+                                                            {{paginis[46]?.nombreeventopro}}
+                                                        </a>
+                                                    </h4>
+
+                                                    <span class="date">
+                                                        <!-- 14 de enero de 2023 - 1:38 pm -->
+                                                        {{ paginis[46]?.fecha | customDate }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /CALLOUT ARROW BOTTOM -->

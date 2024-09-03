@@ -1,0 +1,108 @@
+<!-- botones flotantes para redes sociales -->
+
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+
+     </label>
+    </div>
+</div>
+
+<!-- cabecera pagina -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="background-image:url(assets/img/moncada/banner/eventos.jpg);
+    background-size: cover;
+    background-position: center;
+">
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+        </div>
+    </div>
+</section>
+<!-- eventos recientes -->
+<!-- intro de historia-->
+
+<section class="section section-no-border pt-0 pb-5 m-0 callout-dark heading-title heading-arrow-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h3 class="mb-0">Noticias del museo</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- detalle de la informacion -->
+
+<!-- CALLOUT blanco ARROW BOTTOM -->
+<section class="callout-blanco heading-title heading-arrow3-bottom about-section">
+
+    <div class="home-intro3 margen-superior">
+
+        <div class="container">
+
+            <div class="col-lg-12 mb-5 mb-lg-0">
+                <div class="blog-posts">
+
+                    <div class="row px-3">
+
+                        <div class="col-sm-12">
+                            <article class="post post-medium border-0 pb-0 mb-5">
+                                <div class="post-image">
+                                    <a>
+                                        <!-- <img src="assets/img/moncada/noticias/eventos/eventonuevo.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                        <img [src]=" pagini.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="height: 100%; width: 100%;" />
+                                    </a>
+                                </div>
+
+                                <div class="post-content">
+
+                                    <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                        <!-- <a href="#"> -->
+                                        <a>
+                                            <!-- Título de la noticia -->
+                                            {{pagini?.nombreeventopro}}
+                                        </a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                        <span class="date">
+                                            <!-- 14 de enero de 2023 - 1:38 pm -->
+                                            {{ pagini?.fecha | customDate }} 
+                                        </span>
+                                    </div>
+
+                                    <div class="columnize-2">
+                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec tellus. Vestibulum
+                                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
+                                        non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo
+                                        metus et fringilla. Ut ac elit non mi pharetra dictum nec quis nibh. Pellentesque ut fringilla elit. Aliquam non ipsum id leo eleifend sagittis id a lorem. Sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur ridiculus mus. Aliquam massa mauris, viverra et rhoncus a, feugiat ut sem. Quisque ultricies diam tempus quam molestie vitae sodales dolor sagittis. Praesent commodo sodales purus. Maecenas scelerisque
+                                        ligula vitae leo adipiscing a facilisis nisl ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. -->
+                                        {{pagini.detalle}}
+
+                                    </div>
+                                </div>
+                            </article>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- /CALLOUT ARROW BOTTOM -->
+
+<!-- fin del post detalle de la informacion -->

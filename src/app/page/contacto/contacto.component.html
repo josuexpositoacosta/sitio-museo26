@@ -1,0 +1,164 @@
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+
+</label>
+    </div>
+</div>
+
+<!-- cabecera pagina -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="
+    background-image: url(assets/img/moncada/banner/h.jpg);
+    background-size: cover;
+    background-position: center;
+  ">
+    <!-- <img src="assets/img/moncada/banner/h.jpg" alt=""> -->
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5"></div>
+    </div>
+</section>
+
+<!-- intro de historia-->
+<section class="section section-no-border callout-dark heading-title heading-arrow-bottom pt-4 pb-5 m-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h2 class="mb-0">Contacto</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contacto -->
+
+<div class="container mt-5">
+    <div class="row py-4">
+        <div class="col-lg-6">
+            <h5 class="mt-2 mb-0">Contáctenos</h5>
+            <p class="mb-4">Estamos a su disposición.</p>
+
+            <!-- <form class="contact-form" (submit)="enviarCorreo()" method="POST"> -->
+            <!-- <form class="contact-form" action="php/contact-form.php" method="POST"> -->
+
+            <div class="contact-form-success alert alert-success d-none mt-4">
+                <strong>Success!</strong> Su mensaje fue enviado.
+            </div>
+
+            <div class="contact-form-error alert alert-danger d-none mt-4">
+                <strong>Error!</strong> hay un error enviando su mensaje.
+                <span class="mail-error-message text-1 d-block"></span>
+            </div>
+
+
+            <!-- <div class="row">
+                <div class="form-group col-lg-6">
+                    <label class="form-label mb-1 text-2">Servidor de Correo</label>
+                   
+                    <input type="text" [(ngModel)]="servidorCorreo" value="servidorCorreo" data-msg-required="Entre su Servidor de correo." maxlength="100" class="form-control text-3 h-auto py-2" name="nombreCompleto" required />
+                </div>
+                <div class="form-group col-lg-6">
+                    <label class="form-label mb-1 text-2">Contraseña</label>
+
+                    <input type="text" [(ngModel)]="contraseCorreoOrigen" value="contraseCorreoOrigen" data-msg-required="Entre su Clave." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="correoOrigen" required
+                    />
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <label class="form-label mb-1 text-2">Nombre completo</label>
+                    <!-- <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required /> -->
+                    <input type="text" [(ngModel)]="nombreCompleto" data-msg-required="Entre su nombre." maxlength="100" class="form-control text-3 h-auto py-2" name="nombreCompleto" required />
+                </div>
+                <div class="form-group col-lg-6">
+                    <label class="form-label mb-1 text-2">Correo electrónico</label>
+                    <!-- <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required /> -->
+                    <input type="email" [(ngModel)]="correoOrigen" data-msg-required="Entre su email." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="correoOrigen" required />
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label class="form-label mb-1 text-2">Asunto</label>
+                    <!-- <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control text-3 h-auto py-2" name="subject" required /> -->
+                    <input type="text" [(ngModel)]="asunto" data-msg-required="Entre el asunto." maxlength="100" class="form-control text-3 h-auto py-2" name="asunto" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label class="form-label mb-1 text-2">Mensaje</label>
+                    <!-- <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea> -->
+                    <textarea maxlength="5000" [(ngModel)]="mensaje" data-msg-required="Entre su mensaje." rows="8" class="form-control text-3 h-auto py-2" name="mensaje" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <input type="button" (click)="enviarCorreo()" value="Enviar" class="btn btn-museo" data-loading-text="Loading..." />
+
+                </div>
+            </div>
+            <!-- </form> -->
+        </div>
+        <div class="col-lg-6">
+            <div>
+                <h5 class="mt-2 mb-1">Nos encontramos en:</h5>
+                <ul class="list list-icons list-icons-style-2 mt-2">
+                    <li>
+                        <i class="fas fa-map-marker-alt top-6" style="color: #000"></i> Calle Trinidad Esquina Moncada sin número, Santiago de Cuba, Cuba.
+                    </li>
+                    <li>
+                        <i class="fas fa-phone top-6" style="color: #000"></i> (53) 22-661157
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope top-6" style="color: #000"> <p ><a  [href]="correo">{{usuarios[0]?.email}}</a></p>
+                         </i>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="pt-5">Horario</h5>
+                <ul class="list list-icons list-dark mt-2">
+                    <li>
+                        <i class="far fa-clock top-6"></i> Lunes - Sábado - 8:30 am a 5 pm
+                    </li>
+                    <li><i class="far fa-clock top-6"></i> Domingo - 9:30 am to 1 pm</li>
+                </ul>
+            </div>
+
+            <p class="lead mb-0 text-4">
+                Cualquier duda, opinión o aclaración no dude en contactarnos para darle más información sobre nuestros servicios.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- fin seccion contacto -->
+
+
+<section id="contactSeccion" class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="
+        background-image: url(assets/img/moncada/mapa/mapa.jpg);
+        background-size: cover;
+        background-position: center;       
+        ">
+
+    <!-- <div class="zoom_outer">
+        <div id="zoom"> 
+        </div>
+    </div> -->
+</section>
+
+
+<!-- <section class="section section-height-5 section-with-shape-divider border-0 lazyload" data-bg-src="assets/img/moncada/mapa/mapa.jpg">
+    <div class="spacer py-5 my-5"></div>
+</section> -->
+<!-- seccion contacto-->

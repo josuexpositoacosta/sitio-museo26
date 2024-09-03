@@ -1,0 +1,583 @@
+<!-- botones flotantes para redes sociales -->
+
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+
+    </label>
+    </div>
+</div>
+
+<!-- cabecera pagina -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="
+   background-image:url(assets/img/moncada/banner/h.jpg);
+   background-size: cover;
+   background-position: center;
+ ">
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+        </div>
+    </div>
+</section>
+
+
+<!-- intro de historia-->
+<section class="section section-no-border callout-dark heading-title heading-arrow-bottom pt-4 pb-5 m-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h2 class="mb-0">
+                    {{paginis[236]?.nombreeventopro}}
+                    <!-- Museo histórico 26 de Julio -->
+                </h2>
+                <p class=" positive-ls-2 mt-2 mb-4">
+                    {{paginis[236]?.informacion}}
+                    <!-- Un sitio donde la historia................................. Completar con una frace alegórica  -->
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- seccion tabs de historia-->
+<!--slides tabs otra variante para la seccion de las salas -->
+<section class="section  mt-5  border-0 callout-blanco heading-title heading-arrow3-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img src="assets/img/moncada/historia/museo.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h5 class=" mb-4">
+                    {{paginis[236]?.nombreeventopro}}
+                    <!-- Museo histórico 26 de julio. -->
+                </h5>
+                <div class="scrollable visible-slider has-scrollabar" data-plugin-scrollable style="height: 400px;">
+                    <div class="scrollable-content">
+                        <p align="justify" class="mb-2">
+                            {{paginis[236]?.detalle}}
+                            <!-- La institución fue fundada oficialmente el 26 de Julio de 1967 y se encuentra ubicada en uno de los pabellones de la Ciudad Escolar 26 de Julio, contiguo a la histórica posta 3, por donde un grupo de combatientes al mando del joven
+                            Fidel Castro Ruz, intentaron tomar la otrora fortaleza militar; convertida en Ciudad Escolar, el 28 de Enero de 1960, en ocasión del 107 Aniversario del Natalicio de nuestro Héroe Nacional José Martí. A través de 8 salas interactivas
+                            , diseñadas de forma didáctica , educativa y con el uso de las nuevas tecnologías , se aborda como temática fundamental los hechos ocurridos el 26 de Julio de 1953, la represión desatada contra los asaltantes y el asesinato
+                            de éstos; los métodos e instrumentos de torturas empleados; el proceso judicial conocido como Causa ·no.37/53; la prisión fecunda; el exilio; el desembarco de los expedicionarios del Yate Granma y la entrada de las fuerzas
+                            rebeldes al Moncada con el Triunfo de la Revolución. Se exponen pertenencias de los asaltantes a la fortaleza militar, uniformes ensangrentados, armas de fuego capturadas al ejército de Batista en diferentes acciones combativas,
+                            una réplica en miniatura del yate Granma, el camión en que fuera trasladado en calidad de prisionero el joven abogado Fidel Castro Ruz y una maqueta del cuartel Moncada, con las edificaciones aledañas donde se aprecian los
+                            lugares desde los cuales, los grupos participantes en la acción. -->
+                        </p>
+
+
+                        <p>
+                            El Museo forma parte de la <a [href]="urlcred" target="_blank" style="text-decoration: underline">Red de Museos del 26 de Julio</a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="scrollable-pane" style="opacity: 1; visibility:visible;">
+                        <!--	 <div class="scrollable-slider" style="height: 91px; transform: translate(0px, 0px);"></div> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--fin del row  -->
+    </div>
+    <!--fin del container  -->
+</section>
+
+<!-- fin seccion tabs de historia-->
+<!--  seccion cronologia-->
+<section class="border-0 bg-transparent margen-superior">
+    <div class="container">
+        <div class="row">
+            <div class="col text-left">
+                <h5 class=" mb-4">Museo histórico 26 de julio como institución cultural </h5>
+            </div>
+
+            <div class="col-xl-12">
+
+
+                <section class="timeline custom-timeline">
+                    <div class="timeline-body">
+
+                        <div data-plugin-options="{'minWindowWidth': 0}">
+                            <div class="timeline-box right">
+                                <div class="timeline-box-time">
+                                    <strong class="text-dark"> 1967</strong>
+                                </div>
+                                <div class="timeline-box-arrow"></div>
+                                <div class="timeline-box-content clearfix">
+                                    <p class="m-0">Siete años después de haberse convertido la fortaleza en Ciudad Escolar 26 de julio y con motivo del XIV aniversario de los hechos ocurridos en el Cuartel Moncada en igual fecha pero en 1953, se inauguró una nueva exposición
+                                        en el local que ocupaba la Dirección Regional de Educación.</p>
+                                    <p class="m-0">Con el título ¨Del Moncada a la Sierra ¨ se exponía un recorrido por la historia de Cuba desde el alzamiento del 10 de octubre de 1868, hasta la primera invasión mercenaria financiada por los Estados Unidos, en abril
+                                        de 1961. En ese primer instante, se caracterizó por la presentación de grandes fotografías destacando figuras y hechos relevantes, de las distintas etapas de la Revolución Cubana. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-plugin-options="{'minWindowWidth': 0}">
+                            <div class="timeline-box right">
+                                <div class="timeline-box-time">
+                                    <strong class="text-dark">1973</strong>
+                                </div>
+                                <div class="timeline-box-arrow"></div>
+                                <div class="timeline-box-content clearfix">
+                                    <p class="m-0">Al celebrarse el XX aniversario del ataque al cuartel por Fidel y sus compañeros de lucha; se representó a través de 10 salas, un período de la historia de Cuba, desde la llegada de los españoles hasta el triunfo revolucionario
+                                        del primero de enero de 1959 titulada “Cien años de lucha”. De manera formal, comenzó a ser identificada con el nombre de Museo Histórico 26 de Julio. Un año más tarde, con el montaje de un equipo de video tape
+                                        y tres circuitos cerrados, se apoyó la exposición con la presentación de imágenes fijas y sonido de fondo. De igual modo, se lograron filmar los recibimientos de los pioneros de la Ciudad Escolar a las visitas de
+                                        primer nivel que recorrían la institución y esos materiales se les brindaban a los visitantes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-plugin-options="{'minWindowWidth': 0}">
+                            <div class="timeline-box right">
+                                <div class="timeline-box-time">
+                                    <strong class="text-dark">1998</strong>
+                                </div>
+                                <div class="timeline-box-arrow"></div>
+                                <div class="timeline-box-content clearfix">
+                                    <p class="m-0">Se particularizó la información a partir, de lo relacionado con la acción del Moncada el 26 de julio de 1953, desde sus antecedentes y los resultados; hasta el triunfo del 1ro de enero de 1959. Hacia el 2003 se incorporaron
+                                        nuevos exponentes, elementos de apoyo y didácticos, pero con la misma concepción histórica. En el campo de la investigación, se han desarrollado numerosos estudios de colecciones y guiones museológicos, que se han
+                                        socializado para el beneplácito de visitantes nacionales y extranjeros. </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fin seccion cronología-->
+
+<!-- seccion del plano del moncada-->
+<!-- seccion de la galeria de imagenes del moncada-->
+<div class="content bg-light overflow-hidden p-relative">
+
+    <section class="section bg-transparent border-0 pb-0 mb-0 p-relative overflow-hidden">
+        <div class="container pt-5 pb-5 mb-3">
+            <div class="row">
+                <div class="col text-left">
+                    <h5>Salas del museo</h5>
+                    <p>Selecciones una de las salas y conozca todo sobre nuestra historia.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="image-hotspots">
+                    <img src="assets/img/moncada/salas/planosalas.jpg" class="img-fluid" />
+
+                    <a [routerLink]="['../', 'sala1']" style="left: 70%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala1: &quot;Doctrinas del maestro&quot;"
+                        tabindex="0">
+                        <strong>1</strong>
+                    </a>
+
+                    <a [routerLink]="['../', 'sala2']" style="left: 55%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 2: &quot;La fortaleza militar&quot;"
+                        tabindex="0">
+                        <strong>2</strong>
+                    </a>
+
+                    <a [routerLink]="['../', 'sala3']" style="left: 38%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 3: &quot;Los preparativos del asalto&quot;"
+                        tabindex="0">
+                        <strong>3</strong>
+                    </a>
+
+                    <a [routerLink]="['../', 'sala4']" style="left: 23%; top: 59%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 4:&quot;El asalto&quot;"
+                        tabindex="0">
+                        <strong>4</strong>
+                    </a>
+                    <a [routerLink]="['../', 'sala5']" style="left: 42%; top: 76%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 5: &quot;La historia me absolverá&quot;"
+                        tabindex="0">
+                        <strong>5</strong>
+                    </a>
+
+                    <a [routerLink]="['../', 'sala6']" style="left: 58%; top: 76%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 6: &quot;Victoria de un ideal&quot;"
+                        tabindex="0">
+                        <strong>6</strong>
+                    </a>
+
+                    <a [routerLink]="['../', 'salaexpo']" style="left: 40%; top: 37%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 7: &quot;Las Ideas no se Matan&quot;"
+                        tabindex="0">
+                        <strong>7</strong>
+                    </a>
+                    <a [routerLink]="['../', 'sala7']" style="left: 12%; top: 68%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Sala 8: &quot;La Repreción Batistiana&quot;"
+                        tabindex="0">
+                        <strong>8</strong>
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+
+<!-- visita personalidades-->
+<section class="section section-height-3 bg-color-grey m-0 border-0 appear-animation" data-appear-animation="fadeIn" data-plugin-options="{'accY': -150}">
+    <div class="container py-4">
+        <div class="col text-left">
+            <h5 class=" mb-4">Visitas de personalidades</h5>
+        </div>
+
+        <div class="owl-carousel owl-theme nav-inside nav-inside-edge nav-squared nav-with-transparency nav-dark mt-3" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[59]?.nombreeventopro}}
+                        <!-- Visita del Secretario General del Comité Central del Partido Comunista de la URSS Leonid Brézhnev -->
+                    </h6>
+                    <p>
+                        {{ paginis[59]?.fecha | customDate }}
+                        <!-- 1 de febrero de 1974 -->
+                    </p>
+                </div>
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[59]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/1.png" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+
+            </div>
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[60]?.nombreeventopro}}
+                        <!-- Visita de la autoridad nacional de Palestina Yasser Arafat  -->
+                    </h6>
+                    <p>
+                        {{ paginis[60]?.fecha | customDate }}
+                        <!-- 17 de noviembre de 1974 -->
+                    </p>
+                </div>
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[60]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/2.jpg" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+            </div>
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[61]?.nombreeventopro}}
+                        <!-- Visita del Presidente de Angola Agostinho Neto  -->
+                    </h6>
+                    <p>
+                        {{ paginis[61]?.fecha | customDate }}
+                        <!-- 27 de julio de 1976 -->
+                    </p>
+                </div>
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[61]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/3.jpg" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+            </div>
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[62]?.nombreeventopro}}
+                        <!-- Visita del Primer Ministro de Suecia Oloff Palme -->
+                    </h6>
+                    <p>
+                        {{ paginis[62]?.fecha | customDate }}
+                        <!-- 29 de junio de 1975 -->
+                    </p>
+                </div>
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[62]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/4.jpg" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+            </div>
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[63]?.nombreeventopro}}
+                        <!-- Visita del Presidente de Venezuela Hugo Rafael Chávez Frías -->
+                    </h6>
+                    <p>
+                        {{ paginis[63]?.fecha | customDate }}
+                        <!-- 22 de diciembre de 2007 -->
+                    </p>
+                </div>
+
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[63]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/5.jpg" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+            </div>
+
+            <div>
+                <div class="text-left">
+                    <h6 class=" mb-2" style="color:#000 ;">
+                        {{paginis[64]?.nombreeventopro}}
+                        <!-- Visita del Presidente de Ecuador Rafael Correa  -->
+                    </h6>
+                    <p>
+                        {{ paginis[64]?.fecha | customDate }}
+                        <!-- 4 de mayo de 2017 -->
+                    </p>
+                </div>
+
+                <div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
+                    <img [src]=" paginis[64]?.img | imag " class="img-fluid border-radius-0" alt="">
+                    <!-- <img src="assets/img/moncada/personalidades/6.jpg" class="img-fluid border-radius-0" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- end a enlaces historia -->
+
+
+
+<!-- sección donde van a estar slider de visitas personalidades-->
+
+<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}"
+    data-dynamic-height="['600px','600px','600px','550px','500px']" style="height: 600px;">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+
+            <div class="owl-item position-relative overlay overlay-show overlay-op-9">
+                <a href="#" class="text-decoration-none">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" style="background-image: url(assets/img/moncada/historia/pers1.jpg); background-size: cover; background-position: center;"></div>
+                    <div class="row mt-6 ">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div>
+                                    <div class="col">
+                                        <div class="testimonial testimonial-style-1 text-color-light testimonial-with-quotes">
+                                            <blockquote>
+                                                <p class="mb-5">
+                                                    {{paginis[65]?.informacion}}
+                                                    <!-- Testimonio 1..................Texto de lo que escribió sobre la visita al museo.....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse
+                                                    potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra
+                                                    nec ex. -->
+                                                </p>
+                                                <p>
+                                                    {{paginis[65]?.nombreeventopro}}
+                                                    <!-- Nombre de la personalidad -->
+                                                </p>
+                                            </blockquote>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="owl-item position-relative overlay overlay-show overlay-op-9">
+                <a href="#" class="text-decoration-none">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" style="background-image: url(assets/img/moncada/historia/pers2.jpg); background-size: cover; background-position: center;"></div>
+                    <div class="row mt-6 ">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div>
+                                    <div class="col">
+                                        <div class="testimonial testimonial-style-1 text-color-light testimonial-with-quotes">
+                                            <blockquote>
+                                                <p class="mb-5">
+                                                    {{paginis[66]?.informacion}}
+                                                    <!-- Testimonio 2..................Texto de lo que escribió sobre la visita al museo.....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse
+                                                    potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra
+                                                    nec ex.-->
+                                                </p>
+                                                <p>
+                                                    {{paginis[66]?.nombreeventopro}}
+                                                    <!-- Nombre de la personalidad -->
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="owl-item position-relative overlay overlay-show overlay-op-9">
+                <a href="#" class="text-decoration-none">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" style="background-image: url(assets/img/moncada/historia/pers1.jpg); background-size: cover; background-position: center;"></div>
+                    <div class="row mt-6 ">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div>
+                                    <div class="col">
+                                        <div class="testimonial testimonial-style-1 text-color-light testimonial-with-quotes">
+                                            <blockquote>
+                                                <p class="mb-5">
+                                                    {{paginis[67]?.informacion}}
+                                                    <!-- Testimonio 3..................Texto de lo que escribió sobre la visita al museo.....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse
+                                                    potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra
+                                                    nec ex. -->
+                                                </p>
+                                                <p>
+                                                    {{paginis[67]?.nombreeventopro}}
+                                                    <!-- Nombre de la personalidad -->
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="owl-item position-relative overlay overlay-show overlay-op-9">
+                <a href="#" class="text-decoration-none">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" style="background-image: url(assets/img/moncada/historia/pers2.jpg); background-size: cover; background-position: center;"></div>
+                    <div class="row mt-6 ">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div>
+                                    <div class="col">
+                                        <div class="testimonial testimonial-style-1 text-color-light testimonial-with-quotes">
+                                            <blockquote>
+                                                <p class="mb-5">
+                                                    {{paginis[68]?.informacion}}
+                                                    <!-- Testimonio 4..................Texto de lo que escribió sobre la visita al museo.....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse
+                                                    potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra
+                                                    nec ex. -->
+                                                </p>
+                                                <p>
+                                                    {{paginis[68]?.nombreeventopro}}
+                                                    <!-- Nombre de la personalidad -->
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="owl-nav">
+        <button type="button" role="presentation" class="owl-prev"></button>
+        <button type="button" role="presentation" class="owl-next"></button>
+    </div>
+</div>
+
+
+
+
+<!-- CALLOUT MUESTRA DEL MES rojo ARROW BOTTOM -->
+<section class="callout-rojo heading-title heading-arrow2-bottom">
+
+    <div class="home-intro2 margen-superior margen-inferior">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h5 class="mb-3-5">Información</h5>
+
+                    </div>
+
+                    <div>
+                        <p align="left" class="mb-2">El Museo histórico 26 de Julio abre sus puertas a la población. Puede conocer nuestros <a href="#" class="text-primary2" data-bs-toggle="tooltip" data-bs-animation="false" title="" data-bs-original-title=" Lunes a Sábado: 8:30 am a 5:00 pm. Domingo: 9:30 am a 1:00 pm"
+                                style="text-decoration: underline; color: aliceblue;">horarios</a> para programar sus visitas a nuestro museo y explorar más sobre esta parte de nuestra historia ya sea de forma independiente o de la mano de un guía. </p>
+
+                        <p align="left" class="mb-2">Las entradas tendrán un <a href="#" class="text-primary2" data-bs-toggle="tooltip" data-bs-animation="false" title="" data-bs-original-title="Menores: 2 pesos. Mayores: 5 pesos" style="text-decoration: underline; color: aliceblue;">costo</a>                            de acuerdo a la edad. Estas pueden ser pagadas en la recepción del museo a la hora de visitarnos..</p>
+
+                        <p align="left" class="mb-2">Si desea obtener alguna información o hacer alguna consulta puede <a [routerLink]="['../', 'contacto']" style="text-decoration: underline; color: aliceblue;">contactarnos </a> a través de nuestro sitio y con placer atenderemos
+                            sus necesidades.</p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- /CALLOUT ARROW BOTTOM -->
+<!--End muestra del mes Section -->
+
+
+
+<!-- otra seccion imagen con tooltips-->
+<section>
+    <div class="contener">
+        <img src="assets/img/moncada/mapa/mapa3.jpg" alt="mapa">
+        <div class="todos-los-tooltips">
+            <div class="etiqueta tooltip-1">
+                <div class="pin">
+
+                </div>
+
+
+                <div class="tooltip-contenido">
+                    <div class="arrow"></div>
+
+
+
+                    <div class="img">
+                        <img src="assets/img/moncada/contacto1.jpg" alt="">
+                    </div>
+
+                    <div class="contenidof">
+                        <h1>Museo histórico 26 de julio</h1>
+                        <p>Ubicado en Ave Moncada, Santiago de Cuba. El museo se encuentra en uno de los pabellones de la Ciudad Escolar 26 de Julio, contiguo a la histórica posta 3. </p>
+                    </div>
+                </div>
+
+
+
+                <!-- <div data-map-hover="<div class='popup'><img src='assets/img/moncada/contacto1.jpg' width='200' height='200'></div>">Marcador</div> -->
+
+            </div>
+        </div>
+    </div>
+</section>

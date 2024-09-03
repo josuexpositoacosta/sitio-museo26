@@ -1,0 +1,13 @@
+<form [formGroup]="imageFrom" (ngsubmit)="onSubmit()">
+    <div class="input-file">
+        <input type="file" placeholder="File" (change)="onFileChange($event)" formControlName="file">
+        <img *ngIf="image" class="img-fluid img-thumbnail image" src="{{image}}">
+    </div>
+
+    <input type="text" placeholder="Nombre" formControlName="name" class="name-picture mt-2">
+
+    <br>
+
+    <button type="submit" class="btn btn-outline-primary btn-lg btn-block" [disabled]="!imageFrom.valid"> Enviar</button>
+
+</form>

@@ -1,0 +1,99 @@
+<section class="body">
+
+    <div class="inner-wrapper">
+
+        <!-- start: sidebar -->
+        <aside id="sidebar-left" class="sidebar-left">
+
+            <div class="nano">
+                <div class="nano-content">
+                    <nav id="menu" class="nav-main" role="navigation">
+
+                        <ul class="nav nav-main ">
+                            <li *ngFor="let menu of _sidebar.menuU">
+                                <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i>
+                                    <span class="hide-menu"> {{menu.titulo}} 
+                                       <span class="label label-rouded label-themecolor pull-right"> 
+                                      </span>
+                                    </span>
+                                </a>
+                                <ul>
+
+                                    <li *ngFor="let submenu of menu.submenu">
+                                        <a routerLinkActive="active" [routerLink]="[submenu.url]"> {{submenu.titulo}} </a>
+                                    </li>
+                                    <li>
+                                        <a (click)="_usuarioService.logout()" routerLink="/dashboard"> Cerrar Sessión </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+        <section role="main" class="content-body">
+
+            <div class="col-lg-12 col-xl-6">
+                <section class="card">
+                    <header class="card-header card-header-transparent">
+                        <div class="card-actions">
+                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                            <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                        </div>
+
+                        <h2 class="card-title">Museo 26 de Julio</h2>
+                    </header>
+
+                    <div class="card-body">
+
+
+
+
+
+                        <section>
+
+                            <!--H2>SUBIR IMAGENES </H2>
+            <h5>ULTIMAS IMAGENES</h5>
+            <ul class="list-group" *ngFor="let ar of archivosServer">
+                <li class="list-group-item active">
+                    {{ar.nombre}}
+                </li>
+                <li class="list-group-item">
+                    <img src="../assets/images/ {{ar.nombre}}" />
+
+                </li>
+
+                <li class="list-group-item">Formato: {{ar.nombre}}</li>
+            </ul>
+            <hr/>
+            <form #formutlario="ngForm">
+                <input type="file" (change)="fileEvent($event)">
+                <button (click)="subirArchivo()">Subir Archivo</button>
+            </form-->
+
+                            <div>
+                                <input type="text" disabled value="slide-devices2.jpg" name="slide-devices2.jpg">
+                                <image-upload [partName]="pic1" (error)="setDefaultPic1()" clearButtonCaption="Borrar" buttonCaption="Seleccione una imagen" dropBoxMessage="Seleccione una imagen aqui" (uploadFinished)="onUploadFinish($event, 'slide-devices2.jpg')">
+                                </image-upload>
+                                <div>
+                                    <button (click)="sendImage()" class="btn btn-primary btn-lg">Enviar</button>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                    </div>
+                </section>
+
+
+            </div>
+
+        </section>
+
+
+
+        <app-modal-upload></app-modal-upload>

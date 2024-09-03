@@ -1,0 +1,397 @@
+<!-- botones flotantes para redes sociales -->
+
+<!-- aqui va el codigo de los botones flotantes -->
+<div class="contenedor">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="http://www.facebook.com/" target="_blank" class="icon-social-facebook icons"></a>
+        <a href="http://www.youtube.com/" target="_blank" class="icon-social-youtube icons"></a>
+        <a href="http://www.instagram.com/" target="_blank" class="icon-social-instagram icons"></a>
+        <a href="http://www.twitter.com/" target="_blank" class="icon-social-twitter icons"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="icon-options-vertical icons">
+
+</label>
+    </div>
+</div>
+
+<!-- cabecera pagina -->
+<section class="section section-height-4 border-0 m-0 section-overlay-opacity section-overlay-opacity-scale-3" style="background-image:url(assets/img/moncada/banner/eventos.jpg);
+    background-size: cover;
+    background-position: center;
+ ">
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+        </div>
+    </div>
+</section>
+<!-- eventos recientes -->
+<!-- intro de historia-->
+
+<section class="section section-no-border pt-0 pb-5 m-0 callout-dark heading-title heading-arrow-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h3 class="mb-0">Eventos del museo</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- detalle de la informacion -->
+
+<!-- CALLOUT blanco ARROW BOTTOM -->
+<section class="callout-blanco heading-title heading-arrow3-bottom about-section">
+
+    <div class="home-intro3 margen-superior">
+
+        <div class="container">
+
+            <div class="col-lg-12 mb-5 mb-lg-0">
+                <div class="blog-posts">
+
+                    <div class="row px-3">
+ 
+                        <div class="col-sm-12">
+                            <article class="post post-medium border-0 pb-0 mb-5">
+                                <div class="post-image">
+                                    <!-- <a href="#"> -->
+                                    <a>
+                                        <img [src]=" pagini?.img | imag " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="height: 100%; width: 100%;" />
+                                        <!-- style="height: calc(100vh - 25px)" -->
+                                        <!-- <img src="assets/img/moncada/noticias/eventos/eventonuevo.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> -->
+                                    </a>
+                                </div>
+
+                                <div class="texto-justificado">
+                                <div class="post-content">
+
+                                    <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                        <!-- <a href="#"> -->
+                                        <a>     
+                                        {{ pagini?.nombreeventopro}}
+                                        <!-- Título del evento desarrollado -->
+                                    </a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span><i class="far fa-eye"></i> <a href="#">Visto 150</a></span>
+                                        <span class="date">
+                                            <!-- 14 de enero de 2023 - 1:38 pm -->
+                                            {{ pagini?.fecha | customDate }}
+                                        </span>
+                                    </div>
+
+                                    <div class="columnize-2">
+                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec tellus. Vestibulum
+                                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
+                                        non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo
+                                        metus et fringilla. Ut ac elit non mi pharetra dictum nec quis nibh. Pellentesque ut fringilla elit. Aliquam non ipsum id leo eleifend sagittis id a lorem. Sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur ridiculus mus. Aliquam massa mauris, viverra et rhoncus a, feugiat ut sem. Quisque ultricies diam tempus quam molestie vitae sodales dolor sagittis. Praesent commodo sodales purus. Maecenas scelerisque
+                                        ligula vitae leo adipiscing a facilisis nisl ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. -->
+                                        {{pagini?.detalle}}
+
+                                    </div>
+                                </div>
+                            </div>
+                            </article>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- /CALLOUT ARROW BOTTOM -->
+
+<!-- fin del post detalle de la informacion -->
+
+
+<!-- galeria de videos del moncada-->
+<section class="callout-rojo2 heading-title heading-arrowb-bottom margen-superior margen-inferior">
+
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col text-left">
+                <h5 class="mb-2 ">Galería de videos del evento</h5>
+            </div>
+        </div>
+
+
+
+        <div class="container2">
+            <div class="main-video">
+                <div class="video">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" controls muted autoplay> </video>
+                    <h3 class="title"> 1. titulo del 1er video </h3>
+
+                </div>
+            </div>
+
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 1. titulo del 1er video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 2. titulo del 2do video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 3. titulo del 3er video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 4. titulo del 4to video </h3>
+                </div>
+
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 5. titulo del 5to video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 6. titulo del 6to video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 7. titulo del 7mo video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 8. titulo del 8vo video </h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/img/moncada/video/VIDEO.mp4" muted> </video>
+                    <h3 class="title"> 9. titulo del 9no video </h3>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <script>
+    let listVideo = document.querySelectorAll('.video-list .vid')
+    let mainVideo = document.querySelector('.main-video video')
+    let title = document.querySelector('.main-video .title')
+
+    listVideo.forEach(video => {
+        video.onclick = () => {
+            listVideo.forEach(vid => vid.classList.remove('active'));
+            video.classList.add('active');
+            if (video.classList.contains('active')) {
+                let src = video.children[0].getAttribute('src');
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML = text;
+            };
+        };
+    });
+</script> -->
+
+<!-- seccion de la galeria de imagenes del evento-->
+<div class="content bg-light overflow-hidden p-relative">
+
+    <div id="ourHistoryLightbox" class="mfp-hide">
+        <div class="thumb-gallery">
+            <div class="owl-carousel owl-theme manual thumb-gallery-detail" id="thumbGalleryDetail">
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/1.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/2.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/3.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/4.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/5.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/6.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/7.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/8.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/9.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/10.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/grande/11.jpg" class="img-fluid">
+							</span>
+                </div>
+
+            </div>
+            <div class="owl-carousel owl-theme manual thumb-gallery-thumbs show-thumbs mt" id="thumbGalleryThumbs">
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/1.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/2.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/3.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/4.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/5.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/6.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/7.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/8.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/9.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/10.jpg" class="img-fluid">
+							</span>
+                </div>
+                <div>
+                    <span class="img-thumbnail d-block cur-pointer">
+								<img alt="" src="assets/img/moncada/noticias/eventos/evento1/peque/11.jpg" class="img-fluid">
+							</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="section bg-transparent border-0 pb-0 mb-0 p-relative overflow-hidden margen-superior">
+        <div class="container pb-5 mb-3">
+            <div class="row mb-2">
+                <div class="col text-left">
+                    <h5 class="mb-2 ">Galería de imágenes del evento</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id varius nunc.</p>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-sm-6 mb-4 col-lg-3">
+                    <a href="#ourHistoryLightbox">
+                        <span class="thumb-info custom-thumb-info-style-1 thumb-info-no-borders thumb-info-no-borders-rounded">
+									<span class="thumb-info-wrapper">
+										<img src="assets/img/moncada/noticias/eventos/evento1/portada/1.jpg" alt="" class="img-fluid">
+										<span class="thumb-info-action">
+											<span class="thumb-info-action-icon border-radius-0"><i class="fas fa-plus"></i></span>
+                        </span>
+                        </span>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <a href="#ourHistoryLightbox">
+                        <span class="thumb-info custom-thumb-info-style-1 thumb-info-no-borders thumb-info-no-borders-rounded">
+									<span class="thumb-info-wrapper">
+										<img src="assets/img/moncada/noticias/eventos/evento1/portada/2.jpg" alt="" class="img-fluid">
+										<span class="thumb-info-action">
+											<span class="thumb-info-action-icon border-radius-0"><i class="fas fa-plus"></i></span>
+                        </span>
+                        </span>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#ourHistoryLightbox">
+                        <span class="thumb-info custom-thumb-info-style-1 thumb-info-no-borders thumb-info-no-borders-rounded">
+									<span class="thumb-info-wrapper">
+										<img src="assets/img/moncada/noticias/eventos/evento1/portada/3.jpg" alt="" class="img-fluid">
+										<span class="thumb-info-action">
+											<span class="thumb-info-action-icon border-radius-0"><i class="fas fa-plus"></i></span>
+                        </span>
+                        </span>
+                        </span>
+                    </a>
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <a href="#ourHistoryLightbox">
+                        <span class="thumb-info custom-thumb-info-style-1 thumb-info-no-borders thumb-info-no-borders-rounded">
+									<span class="thumb-info-wrapper">
+										<img src="assets/img/moncada/noticias/eventos/evento1/portada/4.jpg" alt="" class="img-fluid">
+										<span class="thumb-info-action">
+											<span class="thumb-info-action-icon border-radius-0"><i class="fas fa-plus"></i></span>
+                        </span>
+                        </span>
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+<!-- Galería de imágenes de los martires del moncada -->

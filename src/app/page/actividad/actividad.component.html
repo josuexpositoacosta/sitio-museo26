@@ -1,0 +1,343 @@
+<!-- botones flotantes para redes sociales -->
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <img src="assets/img/facebook.png" width="32" height="32">
+            <p><a href="http://www.facebook.com/" target="_blank">Únete a nosotros</a></p>
+        </li>
+        <li>
+            <img src="assets/img/twitter.png" width="32" height="32">
+            <p><a href="http://www.twitter.com/" target="_blank">Únete a nosotros</a></p>
+        </li>
+        <li>
+            <img src="assets/img/linkeding.png" width="32" height="32">
+            <p><a href="http://www.linkedin.com/" target="_blank">Únete a nosotros</a></p>
+        </li>
+        <li>
+            <img src="assets/img/youtube.png" width="32" height="32">
+            <p><a href="http://www.youtube.com/" target="_blank">Únete a nosotros</a></p>
+        </li>
+
+    </ul>
+</div>
+<!-- cabecera pagina -->
+<section class="section section-height-3 border-0 m-0" style="background-image:url(assets/img/moncada/banner/bannerhistoria2.jpg)">
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+            <div class="col-md-12 align-self-center p-static order-2 text-center">
+                <h1 style="color:#FFFBFB;" class="text-uppercase"><strong>Noticias</strong></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- detalle de la informacion -->
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-8 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">
+
+            <article>
+                <div class="card border-0">
+                    <div class="card-body z-index-1 p-0">
+
+                        <h4>
+                            {{pagini.nombreeventopro}}
+                        </h4>
+
+                        <div class="post-image pb-4">
+                            <img [src]=" pagini.img | imag " class="card-img-top custom-border-radius-1" width="50%" alt="noticia" />
+                            <!--img class="card-img-top custom-border-radius-1" src="assets/img/moncada/noticias/noticias/a.jpg" alt="noticia"-->
+                        </div>
+
+                        <div class="post-meta">
+                            <span> <i class="far fa-eye"></i>  </span>
+                        </div>
+
+                        <p class="text-1 mb-3 text-color-default">
+                            <time pubdate datetime="2021-01-10">
+                                {{ pagini.fecha | customDate }}
+                            </time> <span class="opacity-3 d-inline-block px-2">|</span> </p>
+
+
+                        <div class="texto-justificado">
+                            <div class="columnize-2">
+                                {{pagini.detalle}}
+
+                                <!--			<hr class="my-5">  -->
+
+                                <!--			<div class="post-block post-author">
+                                    <h3 class="text-color-primary text-capitalize font-weight-bold text-5 m-0 mb-3">Author</h3>
+                                    <div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
+                                        <a href="blog-post.html">
+                                            <img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                    </div>
+                                    <p><strong class="name"><a href="#" class="text-4 text-dark pb-2 pt-2 d-block">John Doe</a></strong></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.</p>
+                                </div> -->
+
+
+                                <!--		<hr class="my-5">
+
+                                <div id="comments" class="post-block post-comments">
+                                    <h3 class="text-color-primary text-capitalize font-weight-bold text-5 m-0 mb-3">3 comments for "An Interview with John Doe"</h3>
+
+                                    <ul class="comments">
+                                        <li>
+                                            <div class="comment">
+                                                <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                    <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-2.jpg">
+                                                </div>
+                                                <div class="comment-block">
+                                                    <div class="comment-arrow"></div>
+                                                    <span class="comment-by">
+                                                        <strong class="text-dark">John Doe</strong>
+                                                        <span class="float-end">
+                                                            <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                        </span>
+                                                    </span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+                                                    <span class="date float-end">January 12, 2021 at 1:38 pm</span>
+                                                </div>
+                                            </div>
+
+                                            <ul class="comments reply">
+                                                <li>
+                                                    <div class="comment">
+                                                        <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                            <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-3.jpg">
+                                                        </div>
+                                                        <div class="comment-block">
+                                                            <div class="comment-arrow"></div>
+                                                            <span class="comment-by">
+                                                                <strong class="text-dark">John Doe</strong>
+                                                                <span class="float-end">
+                                                                    <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                </span>
+                                                            </span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                            <span class="date float-end">January 12, 2021 at 1:38 pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="comment">
+                                                        <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                            <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-4.jpg">
+                                                        </div>
+                                                        <div class="comment-block">
+                                                            <div class="comment-arrow"></div>
+                                                            <span class="comment-by">
+                                                                <strong class="text-dark">John Doe</strong>
+                                                                <span class="float-end">
+                                                                    <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                </span>
+                                                            </span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                            <span class="date float-end">January 12, 2021 at 1:38 pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="comment">
+                                                <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                    <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                                                </div>
+                                                <div class="comment-block">
+                                                    <div class="comment-arrow"></div>
+                                                    <span class="comment-by">
+                                                        <strong class="text-dark">John Doe</strong>
+                                                        <span class="float-end">
+                                                            <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                        </span>
+                                                    </span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <span class="date float-end">January 12, 2021 at 1:38 pm</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comment">
+                                                <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                    <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                                                </div>
+                                                <div class="comment-block">
+                                                    <div class="comment-arrow"></div>
+                                                    <span class="comment-by">
+                                                        <strong class="text-dark">John Doe</strong>
+                                                        <span class="float-end">
+                                                            <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                        </span>
+                                                    </span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <span class="date float-end">January 12, 2021 at 1:38 pm</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="text-color-primary text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">Leave a Reply</h3>
+
+                                    <form class="custom-form-simple-validation p-4 rounded bg-color-grey" action="/" method="POST">			
+                                        <div class="p-2">
+                                            <div class="row">
+                                                <div class="form-group col-lg-6">
+                                                    <label class="form-label required mb-1 font-weight-bold text-dark">Full Name</label>
+                                                    <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control py-3 px-3 border-0 box-shadow-none" name="name" id="name" required>
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <label class="form-label required mb-1 font-weight-bold text-dark">Email Address</label>
+                                                    <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control py-3 px-3 border-0 box-shadow-none" name="email" id="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col">
+                                                    <label class="form-label required mb-1 font-weight-bold text-dark">Comment</label>
+                                                    <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control p-3 border-0 box-shadow-none" name="message" id="message" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col mb-0">
+                                                    <input type="submit" value="Post Comment" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="blog-sidebar col-lg-4 pt-4 pt-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
+            <aside class="sidebar">
+
+                <div class="tabs tabs-dark mb-4 pb-2">
+                    <h5 class="pt-4">NOTICIAS</h5>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-bs-toggle="tab">Más Vistas</a></li>
+                        <li class="nav-item"><a class="nav-link text-1 font-weight-bold text-uppercase" href="#recentPosts" data-bs-toggle="tab">Recientes</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="popularPosts">
+                            <ul class="simple-post-list">
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a (click)="irnoti(paginis[143])">
+                                                <img [src]=" paginis[143].img | imag " width="50" height="50" alt="">
+                                                <!--img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt=""-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a (click)="irnoti(paginis[143])"> {{paginis[143].nombreeventopro}}</a>
+                                        <div class="post-meta">
+                                            {{ paginis[143].fecha | customDate }}
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a href="detalle-eventos-museo.html">
+                                                <img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a href="detalle-eventos-museo.html">Título de la noticia</a>
+                                        <div class="post-meta">
+                                            Nov 10, 2021
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a href="detalle-eventos-museo.html">
+                                                <img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a href="detalle-eventos-museo.html">Título de la noticia</a>
+                                        <div class="post-meta">
+                                            Nov 10, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="recentPosts">
+                            <ul class="simple-post-list">
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a href="detalle-eventos-museo.html">
+                                                <img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a href="detalle-eventos-museo.html">Título de la noticia</a>
+                                        <div class="post-meta">
+                                            Nov 10, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a href="detalle-eventos-museo.html">
+                                                <img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a href="detalle-eventos-museo.html">Título de la noticia</a>
+                                        <div class="post-meta">
+                                            Nov 10, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-image">
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                            <a href="detalle-eventos-museo.html">
+                                                <img src="assets/img/moncada/noticias/eventos/evento1b.jpg" width="50" height="50" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info">
+                                        <a href="detalle-eventos-museo.html">Título de la noticia</a>
+                                        <div class="post-meta">
+                                            Nov 10, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- fin del post detalle de la informacion -->

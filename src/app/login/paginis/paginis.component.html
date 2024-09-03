@@ -1,0 +1,332 @@
+<section class="body">
+
+    <div class="inner-wrapper">
+        <!-- start: sidebar -->
+        <aside id="sidebar-left" class="sidebar-left">
+
+            <div class="nano">
+                <div class="nano-content">
+                    <nav id="menu" class="nav-main" role="navigation">
+
+                        <ul class="nav nav-main ">
+                            <li *ngFor="let menu of _sidebar.menuU">
+                                <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i>
+                                    <span class="hide-menu"> {{menu.titulo}} 
+                                       <span class="label label-rouded label-themecolor pull-right"> 
+                                      </span>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a routerLink="/usuarios" class="text-primary m-l-5"><b>Volver al menu</b></a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+
+        <section role="main" class="content-body">
+
+            <div class="col-lg-12 col-xl-6">
+                <section class="card">
+                    <header class="card-header card-header-transparent">
+                        <div class="card-actions">
+                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                            <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                        </div>
+
+                        <h2 class="card-title">Museo 26 de Julio</h2>
+                    </header>
+
+                    <div class="card-body">
+
+
+
+
+                        <div class="row animated fadeIn">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Pagina Principal</h4>
+                                        <input #input (keyup)="buscarPagini(input.value)" type="text" class="form-control" placeholder="Buscar ...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row animated fadeIn" *ngIf="cargando">
+                            <div class="col-sm-12">
+                                <div class="alert alert-warning text-center">
+                                    <strong>Cargando</strong>
+
+                                    <br>
+                                    <i class="fa fa-refresh fa-spin fa-2x"></i>
+                                    <br>
+                                    <span>Espere por favor...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row animated fadeIn" *ngIf="!cargando">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> D o c u m e n t o s (
+                                            <small>{{ desde + 1 }}</small>) hasta (
+                                            <small>{{ desde + 5 }}</small>)
+                                        </h3>
+                                        <h6 class="card-title">
+                                            Total de Registros => (<small>{{ totalRegistros }}</small>)
+                                        </h6>
+
+
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <button (click)="cambiardesde(0)" class="btn btn-secondary">
+                                                             Primero
+                                                           </button>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <button (click)="cambiardesde(-5)" class="btn btn-secondary">
+                                                             Anterior
+                                                           </button>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <button (click)="cambiardesde(5)" class="btn btn-secondary">
+                                                               Siguiente
+                                                               </button>
+                                                        </div>
+                                                    </td>
+                                                    <!--td>
+                                                        <div>
+                                                            <button (click)="ultimodesde(totalRegistros)" class="btn btn-secondary">
+                                                             Último
+                                                               </button>
+                                                        </div>
+                                                    </td-->
+                                                </tr>
+
+                                                <tr>
+                                                    <th>No</th>
+
+                                                    <th>Imagen</th>
+                                                    <!-- <th>Nombre</th>
+                                                    <th>Información</th> -->
+
+                                                    <th>Fecha</th>
+                                                    <th>Tipo</th>
+                                                    <!--th>Detalle</th-->
+
+                                                    <!-- <th>Detalles</th> -->
+                                                </tr>
+                                            </thead>
+                                            <tbody *ngFor="let pagini of paginis; index as i">
+                                                <tr>
+                                                    <td>{{ i+1 }} </td>
+
+
+                                                    <td class="w70">
+                                                        <div>
+                                                            <img (click)="mostrarModal( pagini._id )" [src]=" pagini.img | imag " class="img-50 img-circle pointer" title="imagen">
+                                                        </div>
+                                                    </td>
+
+
+
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input class="datetime" name="fecha" type="datetime-local" [(ngModel)]="form.fecha" #fecha="ngModel" autocomplete="off" required>
+                                                        </div>
+                                                        <div>{{ pagini.fecha }}</div>
+                                                    </td>
+
+                                                    <!-- <td>
+                                                        <div *ngIf="inc() >= 0 && 1 >= inc()" > SLIDER </div>
+                                                        <div *ngIf="inc() >= 6 && 12 >= inc()" > SALA </div>                                                      
+                                                        <div *ngIf="inc() >= 13 && 16 >= inc()" > NOTICIA </div> 
+                                                        <div *ngIf="inc() >= 2 && 4 >= inc()" > ACTIVIDAD </div>
+                                                        <div *ngIf="inc() >= 17 && 46 >= inc()" > ACTIVIDAD </div>
+                                                    </td> -->
+
+                                                    <td>
+                                                        <div>
+                                                            <select title="Tipo" class="form-control" name="role" id="role" [(ngModel)]="form.role" #role="ngModel">
+                                                                     <option value="SLIDER">SLIDER</option>
+                                                                     <option value="ACTIVIDAD">ACTIVIDAD</option>
+                                                                     <option value="NOTICIA">NOTICIA</option>
+                                                                     <option value="HISTORIA">HISTORIA</option>
+                                                                     <option value="SALA">SALA</option>
+                                                                  </select>
+                                                        </div>
+                                                        <div>{{ pagini.role }}</div>
+                                                    </td>
+                                                </tr>
+
+                                                <br>
+
+                                                <tr>
+                                                    <td colspan="4" style="font-style: unset;">Nombre
+                                                        <div class="form-group">
+                                                            <input class="form-control" name="nombreeventopro" id="nombreeventopro" type="text" [(ngModel)]="form.nombreeventopro" #nombreeventopro="ngModel" autocomplete="off" required>
+                                                        </div>
+                                                        <div>{{ pagini.nombreeventopro }} </div>
+                                                    </td>
+                                                </tr>
+
+                                                <br>
+
+                                                <tr>
+                                                    <td colspan="4" style="font-style: unset;">Información
+                                                        <div class="form-group">
+                                                            <input class="form-control" name="informacion" type="text" [(ngModel)]="form.informacion" #informacion="ngModel" autocomplete="off" required>
+                                                        </div>
+                                                        <div>{{ pagini.informacion }}</div>
+                                                    </td>
+                                                </tr>
+
+                                                <br>
+
+                                                <tr>
+                                                    <td colspan="4" style="font-style: unset;">Detalles
+                                                        <div class="form-group">
+                                                            <input class="form-control" name="detalle" type="text" [(ngModel)]="form.detalle" #detalle="ngModel" autocomplete="off" required>
+                                                        </div>
+                                                        <div>{{ pagini.detalle }}</div>
+                                                    </td>
+
+                                                    <td>
+                                                        <!--button [routerLink]="['/pagin', pagini._id ]" class="btn btn-primary">
+                                                                <i class="fa fa-edit"></i>
+                                                              </button-->
+
+                                                        <button (click)="guardarPaginis(pagini) " class="btn btn-primary" title="boton">
+                                                                 <i class = "fa fa-save" ></i>
+                                                               </button>
+
+                                                        <!--button (click)="borrarPagini(pagini)" class="btn btn-danger">
+                                                                <i class = "fa fa-trash-o" ></i>
+                                                              </button-->
+
+                                                    </td>
+
+                                                </tr>
+
+
+
+                                            </tbody>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <button (click)="cambiardesde(0)" class="btn btn-secondary">
+                                                         Primero
+                                                       </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <button (click)="cambiardesde(-5)" class="btn btn-secondary">
+                                                         Anterior
+                                                       </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <button (click)="cambiardesde(5)" class="btn btn-secondary">
+                                                           Siguiente
+                                                           </button>
+                                                    </div>
+                                                </td>
+                                                <!--td>
+                                                    <div>
+                                                        <button (click)="cambiardesde(totalRegistros-1)" class="btn btn-secondary">
+                                                         Último
+                                                           </button>
+                                                    </div>
+                                                </td-->
+                                            </tr>
+
+                                        </table>
+
+
+
+                                        <!--div *ngIf="isRegister; else noRegister">
+                                            se creo!!                                           
+                                        </div>
+                                       
+                                        <ng-template #noRegister-->
+
+
+                                        <!-- <div class="row animated fadeIn">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">Registrar Nuevas actividades, eventos y noticias </h3>
+                                                        <section>
+                                                            <div class="container">
+                                                                <form name="form" #f="ngForm" (ngSubmit)="onRegister()" novalidate>
+
+                                                                    <div class="form-group">Nombre
+                                                                        <input class="form-control" name="nombreeventopro" type="text" [(ngModel)]="form.nombreeventopro" #nombreeventopro="ngModel" autocomplete="off" required>
+                                                                    </div>
+
+                                                                    <div class="form-group">Información
+                                                                        <input class="form-control" name="informacion" type="text" [(ngModel)]="form.informacion" #informacion="ngModel" autocomplete="off" required>
+                                                                    </div>
+
+                                                                 
+
+
+
+                                                                    <div class="form-group">
+                                                                        <button type="submit" class="btn btn-primary mb-3" [disabled]="!f.valid" title="boton">
+                                                             <i class = "fa fa-save" ></i>
+                                                          </button>
+                                                                        <div *ngIf="f.submitted && isRegisterFail" class="alert alert-danger">Fallo al crear: {{ errorMsg }}</div>
+                                                                    </div>
+
+
+                                                                </form>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+
+
+    </div>
+</section>
+
+
+
+
+<!-- Modal upload-->
+<app-modal-upload></app-modal-upload>

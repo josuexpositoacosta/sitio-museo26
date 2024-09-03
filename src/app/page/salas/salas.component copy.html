@@ -1,0 +1,245 @@
+<!-- cabecera pagina -->
+<section class="section section-height-3 border-0 m-0" style="background-image:url(assets/img/moncada/banner/bannerhistoria2.jpg)">
+    <div class="container position-relative pt-5 pb-5-5 mt-5 mb-5">
+        <div class="row justify-content-end pt-1 mt-lg-5">
+
+            <div class="col-md-12 align-self-center p-static order-2 text-center">
+                <h1 style="color:#FFFBFB;" class="text-uppercase"><strong>Salas</strong></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="intro" class="section section-no-border bg-light pt-0 m-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 text-center offset-lg-1">
+                <h2 class="font-weight-bold text-7 mb-0">Salas del Museo</h2>
+                <p class="text-4 mb-5">Una visita por ....... </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-with-shape-divider border-0 pt-5 pb-0 m-0 section-text-light section-background section-center section-overlay-opacity section-overlay-opacity-scale-8" style="background: url(assets/img/moncada/salas/fondo.jpg) no-repeat center;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <h2 class="text-7">Plano de las salas del Museo</h2>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="image-hotspots">
+                                <img src="assets/img/moncada/salas/planosalas.png" class="img-fluid" />
+
+                                <a style="left: 70%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 1 Martí: Autor intelectual." tabindex="0">
+                                    <strong>1</strong>
+                                </a>
+
+                                <a style="left: 58%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 2 Un cuartel que trasciende la historia." tabindex="0">
+                                    <strong>2</strong>
+                                </a>
+
+                                <a style="left: 45%; top: 55%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 3 Génesis de una acción." tabindex="0">
+                                    <strong>3</strong>
+                                </a>
+
+                                <a style="left: 22%; top: 62%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 4 Moncada: Un suceso universal." tabindex="0">
+                                    <strong>4</strong>
+                                </a>
+
+                                <a style="left: 45%; top: 78%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 5 Consecuencias y repercusiones de un hecho histórico."
+                                    tabindex="0">
+                                    <strong>5</strong>
+                                </a>
+                                <a style="left: 58%; top: 78%;" class="image-hotspot image-hotspot-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Sala 6 Motivos para un cambio." tabindex="0">
+                                    <strong>6</strong>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="spacer py-5 my-5"></div>
+    <div class="shape-divider shape-divider-bottom shape-divider-reverse-y" style="height: 120px;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="xMinYMin">
+                <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "/>
+            </svg>
+    </div>
+
+</section>
+
+<section class="section section-height-3 section-parallax border-0 m-0 section-text-light section-overlay-opacity section-overlay-opacity-scale-7" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '130%'}" style="background: url(../assets/img/moncada/salas/sala2/fondosala-2b.jpg) no-repeat center;">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-xl-4 mb-5 mb-lg-0">
+                <h2 class="line-height-3 mb-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200" style="color:#FFFFFF;">
+                    Sala Polifuncional:
+
+                </h2>
+                <!--h6>
+                    "Un cuartel que trasciende historia"
+                </h6-->
+                <h6>
+                    {{paginis[70].nombreeventopro}}
+                </h6>
+                <h6>
+                    {{paginis[70].informacion}}
+                </h6>
+            </div>
+            <div class="col-lg-6 col-xl-8">
+                <div class="card appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400" style="background-color:rgba(0,0,0,0.7); border-radius:10px;">
+                    <div class="cad-body p-5">
+                        <div class="texto-justificado" style="padding : 4px; height : 250px; overflow : auto; ">
+                            <p style="color:#FFFFFF;">
+
+                            </p>
+                            <p style="color:#FFFFFF;">
+                                {{paginis[70].detalle}} {{ paginis[70].fecha | customDate }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- fin seccion contacto -->
+<div class="container container-xl-custom">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="font-weight-bold text-7 mb-0">Visite nuestras salas</h2>
+            <p class="text-4 mb-5"> </p>
+        </div>
+    </div>
+
+    <div class="row portfolio-list sort-destination mb-3" data-sort-id="portfolio">
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a href="" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/expt.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala de exposición transitoria</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-5">..... </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala1']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/1.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 1</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala2']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/2.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 2</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala3']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/3.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 3</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala4']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/4.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 4</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala5']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/6.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 5</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 isotope-item">
+            <div class="portfolio-item">
+                <a [routerLink]="['../', 'sala6']" class="text-decoration-none">
+                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+                                <span class="thumb-info-wrapper">
+                                    <img src="assets/img/moncada/salas/515x380/7.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title text-start">
+                                        <span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Sala 6</span>
+                    <span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pe-xl-5 me-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+                    </span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- seccion contacto-->

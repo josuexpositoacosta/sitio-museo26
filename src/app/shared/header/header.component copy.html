@@ -1,0 +1,217 @@
+<!-- Main Header-->
+
+
+<header id="header" class="header-transparent header-semi-transparent header-semi-transparent-dark header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+    <div class="header-body border-top-0 bg-dark box-shadow-none">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a (click)="refresh()" href="">
+                                <img alt="moncada" width="155" height="62" src="assets/img/moncada/logo/logoblanco2.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-main-arrows header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+                            <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+
+                                        <!--li><a class="nav-link" [routerLink]="['../', 'sintesis']">Asaltantes</a> </li-->
+
+                                        <li class="dropdown" *ngFor="let menu of _sidebar.menuH">
+                                            <a class="nav-link dropdown-toggle" href="#">
+                                                <i [class]="menu.icono"></i>
+                                                <span> {{menu.titulo}} 
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li *ngFor="let submenu of menu.submenu">
+                                                    <a class="dropdown-item " routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{submenu.titulo}} </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown" *ngFor="let menu of _sidebar.menuM">
+                                            <a class="nav-link dropdown-toggle">
+                                                <i [class]="menu.icono"></i>
+                                                <span> {{menu.titulo}}                                                 
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+
+                                                <li class="dropdown-submenu" *ngFor="let menu of _sidebar.menuS">
+                                                    <a class="dropdown-item">
+                                                        <i [class]="menu.icono"></i>
+                                                        <span> {{menu.titulo}}                                                 
+                                                         </span>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu">
+                                                        <li *ngFor="let submenu of menu.submenu">
+                                                            <a class="dropdown-item " routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{submenu.titulo}} </a>
+                                                        </li>
+
+                                                        <li class="dropdown-submenu" *ngFor="let menu of _sidebar.menuSa">
+                                                            <a class="dropdown-item">
+                                                                <i [class]="menu.icono"></i>
+                                                                <span> {{menu.titulo}}                                                 
+                                                                 </span>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="dropdown-item" *ngFor="let submenu of menu.submenu">
+                                                                    <a class="dropdown-item " routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{submenu.titulo}} </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+
+                                                <li *ngFor="let submenu of menu.submenu">
+                                                    <a class="dropdown-item " routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{submenu.titulo}} </a>
+                                                </li>
+                                                <li><a class="dropdown-item" [href]="urlr">Red de museos 26 de Julio</a></li>
+                                                <li><a class="dropdown-item" [href]="urlsa">Sala de navegación</a></li>
+                                                <li><a class="dropdown-item" [href]="urlpa">Paseo Virtual</a></li>
+                                                <li><a class="dropdown-item" [href]="urlbi">Biblioteca Virtual</a></li>
+                                                <li><a class="dropdown-item" [href]="urlti">Tienda Virtual</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown" *ngFor="let menu of _sidebar.menuE">
+                                            <a class="nav-link dropdown-toggle">
+                                                <i [class]="menu.icono"></i>
+                                                <span> {{menu.titulo}}                                                 
+                                                 </span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li *ngFor="let submenu of menu.submenu">
+                                                    <a class="dropdown-item " routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{submenu.titulo}} </a>
+                                                </li>
+                                                <li><a class="dropdown-item" [href]="urlce">Centro de documentación</a></li>
+                                                <li><a class="dropdown-item" [href]="urlve">Venta de libros</a></li>
+                                            </ul>
+                                        </li>
+
+
+
+
+                                        <li><a class="nav-link " [routerLink]="['../', 'contacto']">Contacto</a> </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                        </div>
+
+                        <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border d-none d-sm-flex ms-3 order-1 order-lg-2">
+
+                            <ul class="nav nav-pills">
+                                <li class="nav-item dropdown nav-item-left-border d-none d-sm-block nav-item-left-border-remove nav-item-left-border-md-show">
+                                    <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             ESP
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                        <a class="dropdown-item" href="#"> ESP</a>
+                                        <a class="dropdown-item" href="#"> ENG</a>
+                                        <a class="dropdown-item" href="#"> FRA</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <!-- Nombre Usuario -->
+                        <!-- 		<div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                <div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
+                                    <a href="#" class="header-nav-features-toggle">
+                                        <i class="far fa-user"></i> 											</a>
+                                    <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p class="mb-0 pb-0 text-2 line-height-1 pt-1">Hola,</p>
+                                                <p><strong class="text-color-dark text-4">Nombre Usuario</strong></p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="d-flex justify-content-end">
+                                                    <img class="rounded-circle" width="40" height="40" alt="" src="assets/img/avatars/avatar.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <ul class="nav nav-list-simple flex-column text-3">
+                                                    <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="#">Acceder</a></li>
+                                                    <li class="nav-item"><a class="nav-link border-bottom-0" href="#">Cerrar sesión</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  -->
+
+
+                        <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                                <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
+                                <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
+                                    <form role="search" action="page-search-results.html" method="get">
+                                        <div class="simple-search input-group">
+
+                                            <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
+
+                                            <input class="form-control text-1" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar..">
+
+                                            <button class="btn" type="submit">
+                                                    <i class="fas fa-search header-nav-top-icon text-color-dark"></i>
+                                                </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- End Main Header -->
+
+<script>
+    function myFunction() {
+        // Declare variables 
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
